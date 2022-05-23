@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'getting-started-with-ng';
+  title = 'Hello World';
+  textMsg =""
+  getTextMsg(event: Event) {
+    this.textMsg = (event.target as HTMLInputElement).value
+  }
 }
