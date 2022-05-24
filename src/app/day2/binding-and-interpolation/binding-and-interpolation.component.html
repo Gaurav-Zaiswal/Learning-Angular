@@ -1,0 +1,32 @@
+<h2>String interpolation v property binding</h2>
+
+<p>Today, I learned about string interpolation and property binding.</p>
+<ol>
+    <li>String interpolation is used to play around with the variables, as content of two different tags</li>
+    <li>Every values that are passed through it, is treated as string data type.
+        <br> for example<br>
+        if you want some content be within &lt;p&gt; dynamically. Then you'd use string interpolation
+    </li>
+</ol>
+<ol>
+    <li>Property binding is used to dynamically set the predefined properties of any HTML tag</li>
+    <li>suppose, &lt;p hidden&gt; is a HTML tag, then hidden is the property of it.</li>
+    <li>property is defined as [property-name]="valiable-name"</li>
+    <li>List of known properties:</li>
+    <ul>
+        <li>diabled</li>
+        <li>hidden</li>
+        <li>required</li>
+        <li>img src</li>
+        <li>background, etc</li>
+    </ul>
+</ol>
+<p>We can also use String interpolation to set up the property of an html tag, however, since that String <br>
+    interpolation treates every arguments as string type, even if you try to pass a boolean value such as hidden, disable,
+    it will treat them like strings, and the expected result won't be seen.
+</p>
+<h4>Example</h4>
+<button [disabled]="isDisabled">property binding</button> &nbsp;
+<button disabled="{{isDisabled}}">string interpolation</button>
+<p>As, you can see button with property binding is working fine, but not the button having string interpolation.</p>
+<p>By default all boolean values are True in HTML therefore, if the boolean value is set to true then, we can not observer the difference</p>

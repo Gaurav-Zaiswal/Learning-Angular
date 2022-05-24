@@ -3,10 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { BindingAndInterpolationComponent } from './day2/binding-and-interpolation/binding-and-interpolation.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    BindingAndInterpolationComponent
   ],
   imports: [
     BrowserModule,
