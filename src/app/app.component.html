@@ -1,6 +1,9 @@
 <p>-------------------------------- Day 1 ------------------------------------------------</p>
 <input type="text" placeholder="write anything" (keyup)="getTextMsg($event)"/>
-
 <h3>{{textMsg}}</h3>
+
 <p>-----------------------------------Day 2------------------------------------------------</p>
 <app-binding-and-interpolation></app-binding-and-interpolation>
+<p>-----------------------------------Day3-------------------------------------------------</p>
+<input type="text" placeholder="write anything" (keyup)="getTextMsg($event)"/>
+<app-data-passing-btwn-comps [name]="textMsg"></app-data-passing-btwn-comps>
